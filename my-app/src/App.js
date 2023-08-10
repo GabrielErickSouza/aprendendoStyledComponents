@@ -1,14 +1,18 @@
-import {Title,TitleSmall,Container} from './style'
+import {Title,TitleSmall,Container,GlobalStyle} from './style'
+
 
 function App() {
   return (
+    <>
+    <GlobalStyle/>
     <Container>
-      <Title fontsize={20}>
+      <Title fontSize={20}>
         Hello World!!
         <span>Meu lugar</span>
       </Title>
       <TitleSmall>text small</TitleSmall>
     </Container>
+    </>
   );
 }
 

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const  Title = styled.h1`
     color: #f00;
@@ -20,4 +20,10 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+`
+
+export const GlobalStyle = createGlobalStyle`
+    body{
+        margin:0;
+    }
 `
